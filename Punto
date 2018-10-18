@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+class Punto{
+public:
+    int x,y;
+};
+class Vector{
+public:
+    Punto inicio,fin;
+};
+void imprimir(const Vector v)
+{
+    cout<<"("<<v.inicio.x<<","<<v.inicio.y<<")"<<"  "<<"("<<v.fin.x<<","<<v.fin.y<<")"<<endl;
+}
+float modulo(const Vector v)
+{
+    cout<<"El modulo del vector de inicio es: "<<sqrt((v.inicio.x*v.inicio.x)+(v.inicio.y*v.inicio.y))<<endl;
+    cout<<"El modulo del vector de final es: "<<sqrt((v.fin.x*v.fin.x)+(v.fin.y*v.fin.y))<<endl;
+}
+int main()
+{
+    Vector v;
+    v.inicio.x=1;
+    v.inicio.y=3;
+    v.fin.x=4;
+    v.fin.y=2;
+    imprimir(v);
+    modulo(v);
+}
+
+
