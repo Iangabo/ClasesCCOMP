@@ -1,0 +1,48 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float mod,mod1;
+class Punto{
+public:
+    int x,y;
+};
+class Vector{
+public:
+    Punto inicio,fin;
+};
+void imprimir(const Vector v)
+{
+    cout<<"("<<v.inicio.x<<","<<v.inicio.y<<")"<<"  "<<"("<<v.fin.x<<","<<v.fin.y<<")"<<endl;
+}
+float modulo(const Vector v)
+{
+    mod=sqrt((v.inicio.x*v.inicio.x)+(v.inicio.y*v.inicio.y));
+    mod1=sqrt((v.fin.x*v.fin.x)+(v.fin.y*v.fin.y));
+    cout<<"El modulo del vector de inicio es: "<<mod<<endl;
+    cout<<"El modulo del vector de final es: "<<mod1<<endl;
+}
+float moduloarr(const Vector v)
+{
+    float modmod=sqrt((mod*mod)+(mod1*mod1));
+    return modmod;
+}
+
+int main()
+{
+    Vector v;
+    v.inicio.x=15;
+    v.inicio.y=20;
+    v.fin.x=30;
+    v.fin.y=40;
+    imprimir(v);
+    modulo(v);
+    Vector arr[2];
+    arr[0].inicio.x=15;
+    arr[0].fin.y=20;
+    arr[1].inicio.x=30;
+    arr[1].fin.y=40;
+    cout<<"el modulo de los elementos del arreglo es: "<<moduloarr(v)<<endl;
+
+}
