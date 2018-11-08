@@ -6,7 +6,7 @@ class Gato
 {
     public:
         Gato(string p, int q):Animal (p,q){};
-        void pico(string);
+        void unias(string);
         void habla();
 };
 
