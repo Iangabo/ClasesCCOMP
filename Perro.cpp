@@ -1,13 +1,13 @@
 
 
-void Perro::color(string x)
+void Perro::raza(string x)
 {
-    cout<<"el color del gato es:"<<x<<"\n";
+    cout<<"Su raza es:"<<x;
 }
 
-void gato::habla()
+void Perro::habla()
 {
-        cout<<"su nombre es: "<<nombre<<"\n";
-        cout<<"tiene "<<nroPatas<<" patas\n";
-        cout<<"no habla\n";
+        cout<<"Se llama: "<<nombre;
+        cout<<"tiene "<<nroPatas<<" patas";
+        cout<<"Guau!";
 }
