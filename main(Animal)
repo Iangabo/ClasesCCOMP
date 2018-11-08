@@ -1,9 +1,33 @@
+#include "Animal.h"
+#include "Perro.h"
+#include "Gato.h"
+#include "Loro.h"
 #include <iostream>
+
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+
+    Perro a("Scooby",4);
+    a.raza("Pastor Aleman");
+    a.habla();
+
+    Gato b("Wilson", 4);
+    b.unias("grandes");
+    b.habla();
+
+    Loro c("Pirata",2);
+    c.color("amarillo");
+    c.habla();
+
+    Perro *ptr=&a;
+    Gato *ptr1=&b;
+    Loro *ptr2=&c;
+
+    ptr->habla();
+    ptr1->habla();
+    ptr2->habla();
+
 }
