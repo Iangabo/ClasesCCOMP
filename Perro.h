@@ -5,7 +5,10 @@
 class Perro : public Animal
 {
     public:
-        triangle(string a, int b) : Animal (a,b){};
+        Perro(string a, int b) : Animal (a,b){};
+        void raza(string);
+        void habla();
+        
         
 
 };
