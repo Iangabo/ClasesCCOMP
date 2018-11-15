@@ -2,7 +2,7 @@
 #define GATO_H
 
 
-class Gato
+class Gato : public Animal
 {
     public:
         Gato(string p, int q):Animal (p,q){};
