@@ -8,6 +8,10 @@ using namespace std;
 
 class ArrAnimal
 {
+     private:
+        int size;
+        Animal *animales;
+        void resize(int resize);
     public:
         ArrAnimal();
         ArrAnimal(const Animal ptr[], const int size);
@@ -20,11 +24,7 @@ class ArrAnimal
         void insert(const int , const Animal &a);
         void remove(const int);
         void clear();
-
-    private:
-        int size;
-        Animal *animales;
-        void resize(int resize);
+   
 };
 
 #endif // ARRANIMAL_H
