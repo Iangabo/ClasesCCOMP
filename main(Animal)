@@ -29,5 +29,27 @@ int main()
     ptr->habla();
     ptr1->habla();
     ptr2->habla();
+    
+    cout<<"push back" <<endl;
+    pp.push_back(d);
+    pp.habla();
+    cout<<"\n";
+
+    cout<<"remover elementos"<<"\n";
+    pp.remove(4);
+    pp.habla();
+    cout<<"\n";
+
+    cout<<"insertar elemento" <<"\n";
+    pp.insert(1,d);
+    pp.habla();
+    
+
+    cout<<"remover elementos"<<endl;
+    pp.remove(2);
+    pp.habla();
+
+    pp.clear();
+    pp.habla();
 
 }
